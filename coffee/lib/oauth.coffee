@@ -114,7 +114,7 @@ module.exports = (Materia) ->
 				return
 			, 1200 * 1000)
 
-			wnd = window.open(url, "_blank", 'toolbar=yes,closebuttoncaption=Back,presentationstyle=formsheet,toolbarposition=top,clearsessioncache=yes,clearcache=yes')
+			wnd = window.open(url, "_blank", 'location=no,toolbar=yes,closebuttoncaption=Back')
 			
 			wnd.addEventListener "loadstart", (ev) ->
 				return  if ev.url.substr(0, 17) isnt "http://localhost/"
